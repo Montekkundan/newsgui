@@ -118,7 +118,7 @@ fn fetch_news(news_tx: &mut std::sync::mpsc::Sender<NewsCardData>) {
             for a in articles.iter() {
                 let news = NewsCardData {
                     title: a.title().to_string(),
-                    url: a.content().to_string(), // Update to use the content as URL for this example
+                    url: a.content().to_string(),
                     desc: a.content().to_string(),
                     source: a.source().to_string(),
                 };
@@ -142,7 +142,7 @@ async fn fetch_web(news_tx: std::sync::mpsc::Sender<NewsCardData>) {
         for a in resp_articles.iter() {
             let news = NewsCardData {
                 title: a.title().to_string(),
-                url: a.content().to_string(), // Update to use the content as URL for this example
+                url: a.content().to_string(),
                 desc: a.content().to_string(),
                 source: a.source().to_string(),
             };

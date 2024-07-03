@@ -9,7 +9,7 @@ serde = { version = "1.0.130", features = ["derive"] }
 tracing = "0.1.29"
 tracing-subscriber = "0.2.25"
 newsapi = { path = "../newsapi", features = ["async"] }
-
+getrandom = { version = "0.2.0", features = ["js"] }
 [lib]
 crate-type = ["cdylib", "rlib"]
 
